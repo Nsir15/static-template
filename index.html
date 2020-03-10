@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <div id="app">
+      <div>
+        __name__ &nbsp;<br />数量：
+        <span class="num">__num__</span>
+      </div>
+      <div>
+        <button class="add">加N</button>
+        <button class="minus">减N</button>
+        <button class="clear">清空</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
